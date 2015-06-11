@@ -6,11 +6,11 @@ import (
 )
 
 func main() {
-	maxNumber := 999*999
+	maxNumber := 999 * 999
 	found := false
-	for i:=maxNumber;i>0 && !found;i-- {
+	for i := maxNumber; i > 0 && !found; i-- {
 		if checkPalindrome(i) {
-			for j:=999;j>=i/999 && !found;j-- {
+			for j := 999; j >= i/999 && !found; j-- {
 				if i%j == 0 {
 					fmt.Println(i)
 					found = true
